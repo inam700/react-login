@@ -1,4 +1,4 @@
-export const validate = (element, formdata = []) => {
+export const validate = (element, inputdata = []) => {
   let error = [true, ""];
 
   if (element.validate.email) {
@@ -10,6 +10,12 @@ export const validate = (element, formdata = []) => {
   if (element.validate.required) {
     const valid = element.value.trim() !== "";
     const message = `${!valid ? "This field is required" : ""}`;
+    error = !valid ? [valid, message] : error;
+  }
+  if (element.validate.confirm) {
+    const valid =
+      element.value.trim() === inputdata[element.validate.confirm].value;
+    const message = `${!valid ? "Passwords do not match" : ""}`;
     error = !valid ? [valid, message] : error;
   }
 

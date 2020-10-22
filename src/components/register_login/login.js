@@ -13,7 +13,7 @@ class Login extends Component {
         inputConfig: {
           name: "email_input",
           type: "email",
-          placeholder: "johndoe@gmail.com",
+          placeholder: "Enter Your Email",
         },
         validate: {
           required: true,
@@ -29,7 +29,7 @@ class Login extends Component {
         inputConfig: {
           name: "password_input",
           type: "password",
-          placeholder: "********",
+          placeholder: "Enter Your Password",
         },
         validate: {
           required: true,
@@ -59,10 +59,11 @@ class Login extends Component {
   render() {
     return (
       <div className="login_card">
-        <h3>Login <span>Form</span></h3>
+        <h3>
+          Login <span>Form</span>
+        </h3>
         <form className="fields" onSubmit={(event) => this.submitForm(event)}>
           <div className="input_box">
-            <label>E-mail</label>
             <InputField
               id={"email"}
               inputdata={this.state.inputdata.email}
@@ -70,7 +71,6 @@ class Login extends Component {
             />
           </div>
           <div className="input_box">
-            <label>Password</label>
             <InputField
               id={"password"}
               inputdata={this.state.inputdata.password}
