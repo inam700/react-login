@@ -14,7 +14,7 @@ class Register extends Component {
         inputConfig: {
           name: "firstname_input",
           type: "text",
-          placeholder: "Enter Your FirstName",
+          placeholder: "Enter Your First Name",
         },
         validate: {
           required: true,
@@ -29,7 +29,7 @@ class Register extends Component {
         inputConfig: {
           name: "lastname_input",
           type: "text",
-          placeholder: "Enter Your LastName",
+          placeholder: "Enter Your Last Name",
         },
         validate: {
           required: true,
