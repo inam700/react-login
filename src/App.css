@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.login_card {
+  width: 350px;
+  height: 500px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 20px;
+  background: #000000;
+}
+.login_card h3{
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.fields{
+  width: 100%;
+  padding: 5px;
+}
+
+.fields .input_box{
+  margin-top: 20px;
+}
+.fields .input_box label{
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.fields .input_box input{
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  color: #000000;
+  font-size: 18px;
+}
+.fields .input_box input::placeholder{
+  font-size: 14px;
+}
+
+.fields button{
+  width: 100%;
+  height: 30px;
+  margin-top: 25px;
+  border: none;
+  letter-spacing: 3px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: lightcoral;
+}
+.login_card p{
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+.login_card p a{
+  text-decoration: none;
+}
+.login_card p a:hover{
+  color: #ffffff;
+}
+
+.error{
+  display: block;
+  color: #ff0000;
+  margin-top: 3px;
+}
